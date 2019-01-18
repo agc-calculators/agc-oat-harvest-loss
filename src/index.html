@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Oat Harvest Loss</title>
+  <link rel="stylesheet" href="/build/agc-oat-harvest-loss.css" type="text/css" />
+  <script src="/build/agc-oat-harvest-loss.js"></script>
+  <style>
+    h1 {
+      padding: 0 0 10px 0;
+      border-bottom: 2px solid #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oat Harvest Loss</h1>
+  <agc-oat-harvest-loss socket="example" mode="full">
+      <div slot="results">
+      <agc-oat-harvest-loss-results socket="example">
+        <div slot="empty">
+          <agc-oat-harvest-loss-results-placeholder></agc-oat-harvest-loss-results-placeholder>
+        </div>
+      </agc-oat-harvest-loss-results>
+      <agc-oat-harvest-loss-inputs socket="example"></agc-oat-harvest-loss-inputs>
+    </div>
+  </agc-oat-harvest-loss>
+
+</body>
+</html>

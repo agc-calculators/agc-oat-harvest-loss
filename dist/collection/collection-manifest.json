@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-oat-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcOatHarvestLoss",
+      "componentPath": "components/agc-oat-harvest-loss/agc-oat-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcOatHarvestLossInputs",
+      "componentPath": "components/agc-oat-harvest-loss-inputs/agc-oat-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcOatHarvestLossProgress",
+      "componentPath": "components/agc-oat-harvest-loss-progress/agc-oat-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcOatHarvestLossResults",
+      "componentPath": "components/agc-oat-harvest-loss-results/agc-oat-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcOatHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-oat-harvest-loss-results-placeholder/agc-oat-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
